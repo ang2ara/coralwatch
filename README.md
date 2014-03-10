@@ -1,4 +1,4 @@
-# PhoneGap Build Starter Application
+# CoralWacth
 
 > A Hello World application to get started with PhoneGap Build.
 
