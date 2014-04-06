@@ -3,16 +3,16 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.hello-world"
+        id        = "com.metroweb.coralwatch"
         version   = "1.0.0">
 
     <name>CoralWatch</name>
 
     <description>
-        CoralWatch mobile application
+        CoralWatch mobile application.
     </description>
 
-    <author href="http://coralwatch.org" email="anggara@metroweb.co.id">
+    <author href="http://www.metroweb.co.id" email="anggara@metroweb.co.id">
         Metroweb Team
     </author>
 
