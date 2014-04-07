@@ -27,8 +27,6 @@ function setupDefaultView() {
     //Setup the ViewNavigator
     window.viewNavigator = new ViewNavigator( 'body' );	
     window.viewNavigator.pushView( defaultView );
-    
-	$.getScript("data.js", scriptSuccess);
 }
 
 function onTutorialViewClick( event ) {
