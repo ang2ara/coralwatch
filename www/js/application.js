@@ -79,7 +79,7 @@ function onSearchResultMapButtonClick( event ) {
 
 
 function onAboutViewClick( event ) {
-    var view = { title: "About CoralWatch",
+    var view = { title: "Add new survey",
              backLabel: (isTablet() ? "Back" : " "),
              view: viewAssembler.aboutView()
            };
@@ -88,7 +88,7 @@ function onAboutViewClick( event ) {
     return false;
 }
 
-function onEntryDataViewClick( event ) {
+function onSearchViewClick( event ) {
     var view = { title: "Add new survey",
              backLabel: (isTablet() ? "Back" : " "),
              view: viewAssembler.searchView(),
@@ -98,14 +98,16 @@ function onEntryDataViewClick( event ) {
     return false;
 }
 
-function onTutorialClick( event ) {
+function onNearbyViewClick( event ) {
 
-    var view = { 
-		title: "Tutorial",
-		view: viewAssembler.tutorialView()
-	};
+    var view = { title: "Add new survey",
+             view: viewAssembler.findNearbyView()
+           };
     window.viewNavigator.pushView( view );
-	event.stopPropagation();
+    
+    //acquire location
+    navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError, { maximumAge: 60000, timeout: 5000, enableHighAccuracy: true });
+    event.stopPropagation();
     return false;
 }
 

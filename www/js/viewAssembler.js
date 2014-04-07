@@ -1,6 +1,5 @@
 
 var templates = {
-	tutorialViewTemplate:"views/tutorialViewTemplate.html",
     aboutViewTemplate:"views/aboutViewTemplate.html",
     defaultViewTemplate:"views/defaultViewTemplate.html",
     findMarketsNearMeViewTemplate:"views/findMarketsNearMeViewTemplate.html",
@@ -66,9 +65,9 @@ function ViewAssembler() {
 
 ViewAssembler.prototype.defaultView = function() {
     var el = $( templates.defaultViewTemplate );
-    el.find("#tutorial").on( this.CLICK_EVENT, onTutorialViewClick );
-    el.find("#EntryData").on( this.CLICK_EVENT, onEntryDataViewClick );
-	el.find("#about").on( this.CLICK_EVENT, onAboutViewClick );
+    el.find("#nearMe").on( this.CLICK_EVENT, onNearbyViewClick );
+    el.find("#search").on( this.CLICK_EVENT, onSearchViewClick );
+    el.find("#about").on( this.CLICK_EVENT, onAboutViewClick );
     return el;
 }
 
@@ -77,8 +76,8 @@ ViewAssembler.prototype.aboutView = function() {
     return el;
 }
 
-ViewAssembler.prototype.tutorialView = function() {
-    var el = $( templates.tutorialViewTemplate );
+ViewAssembler.prototype.findNearbyView = function() {
+    var el = $( templates.findMarketsNearMeViewTemplate );
     return el;
 }
 
