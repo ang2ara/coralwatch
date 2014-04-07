@@ -77,6 +77,15 @@ function onSearchResultMapButtonClick( event ) {
     return false;
 }
 
+function onTutorialViewClick( event ) {
+    var view = { title: "Tutorial",
+             backLabel: (isTablet() ? "Back" : " "),
+             view: viewAssembler.tutorialView()
+           };
+    window.viewNavigator.pushView( view );
+    event.stopPropagation();
+    return false;
+}
 
 function onAboutViewClick( event ) {
     var view = { title: "Add new survey",

@@ -201,6 +201,7 @@ body {
     /** 
 		background-image:url('graphics/wheat_bg_nocolor.png');
 	**/
+	background-color:6fabdd;
     background-position: bottom center;
     background-repeat:no-repeat;
 }
@@ -215,12 +216,15 @@ body {
     }
 }
 
+#tutorialView h2,
 #aboutView h2,
 #defaultView h2 {
     display:block;
     padding:0em;
     text-align:center;
 }
+
+#turorialView div,
 #aboutView div,
 #defaultView div {
     display:block;
@@ -243,29 +247,27 @@ body {
     background-color:#D9D900;
 }
 
-#defaultView #nearMe {
+#defaultView #tutorial{
     padding-left:75px;
-    background-image:url('graphics/map_marker.png');
-    background-position: 15px center;
-    background-repeat:no-repeat;
-}
-
-#defaultView #search {
-    padding-left:75px;
-    background-image:url('graphics/search.png');
-    background-position: 5px center;
-    background-repeat:no-repeat;
 }
 
 #defaultView #about {
     padding-left:75px;
-    background-image:url('graphics/info.png');
-    background-position: 10px center;
-    background-repeat:no-repeat;
 }
 
 
 #findMarketsNearMeView {
+}
+
+#tutorialView {
+    padding:1em;
+    padding-top:0em;
+	
+    backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
 
 #aboutView {
@@ -326,109 +328,6 @@ body {
     padding-left:62px;
     background-repeat:no-repeat;
 }
-
-#credit_cards {
-    background-image:url('graphics/credit_card.png');
-    background-position: 10px center;
-}
-
-#wic_accepted {
-    background-image:url('graphics/family.png');
-    background-position: 15px center;
-}
-
-#senior {
-    background-image:url('graphics/senior.png');
-    background-position: 24px center;
-}
-
-#snap {
-    background-image:url('graphics/snap.png');
-    background-position: 20px center;
-}
-
-#bakedgoods {
-    background-image:url('graphics/bread.png');
-    background-position: 10px center;
-}
-
-#cheese {
-    background-image:url('graphics/cheese.png');
-    background-position: 7px center;
-}
-
-#arts {
-    background-image:url('graphics/arts.png');
-    background-position: 12px center;
-}
-
-#flowers {
-    background-image:url('graphics/flower.png');
-    background-position: 15px center;
-}
-
-#seafood {
-    background-image:url('graphics/fish.png');
-    background-position: 7px center;
-}
-
-#fruit {
-    background-image:url('graphics/fruit.png');
-    background-position: 15px center;
-}
-
-#herbs {
-    background-image:url('graphics/herb.png');
-    background-position: 15px center;
-}
-
-#vegetables {
-    background-image:url('graphics/vegetables.png');
-    background-position: 16px center;
-}
-
-#honey {
-    background-image:url('graphics/honey.png');
-    background-position: 17px center;
-}
-
-#jams {
-    background-image:url('graphics/jams.png');
-    background-position: 17px center;
-}
-
-#maple {
-    background-image:url('graphics/maple.png');
-    background-position: 17px center;
-}
-
-#nuts {
-    background-image:url('graphics/nuts.png');
-    background-position: 15px center;
-}
-
-#meat {
-    background-image:url('graphics/meat.png');
-    background-position: 10px center;
-}
-
-#plants {
-    background-image:url('graphics/plants.png');
-    background-position: 18px center;
-}
-
-#prepared {
-    background-image:url('graphics/prepared.png');
-    background-position: 15px center;
-}
-
-#soap {
-    background-image:url('graphics/soap.png');
-    background-position: 10px center;
-}
-
-
-
 
 #marketMapView {
     width:100%;

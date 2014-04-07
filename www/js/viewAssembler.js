@@ -1,5 +1,6 @@
 
 var templates = {
+	turoialViewTemplate:"views/tutorialViewTemplate.html",
     aboutViewTemplate:"views/aboutViewTemplate.html",
     defaultViewTemplate:"views/defaultViewTemplate.html",
     findMarketsNearMeViewTemplate:"views/findMarketsNearMeViewTemplate.html",
@@ -68,6 +69,12 @@ ViewAssembler.prototype.defaultView = function() {
     el.find("#nearMe").on( this.CLICK_EVENT, onNearbyViewClick );
     el.find("#search").on( this.CLICK_EVENT, onSearchViewClick );
     el.find("#about").on( this.CLICK_EVENT, onAboutViewClick );
+	el.find("#tutorial").on( this.CLICK_EVENT, onTutorialViewClick );
+    return el;
+}
+
+ViewAssembler.prototype.turoialView = function() {
+    var el = $( templates.tutorialViewTemplate );
     return el;
 }
 
